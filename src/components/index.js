@@ -1,3 +1,6 @@
-export { default as Container } from './Container.svelte';
-export { default as Alert } from './Alert.svelte';
-export { default as Copyright } from './Copyright.svelte';
+import Alert from './Alert.svelte';
+import Container from './Container.svelte';
+import Copyright from './Copyright.svelte';
+import Icon from './Icon.svelte';
+
+export { Alert, Container, Copyright, Icon };

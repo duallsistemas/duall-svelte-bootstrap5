@@ -66,10 +66,11 @@ export default {
       inlineSources: !production
     }),
     copy({
-      targets: [{
-        src: 'node_modules/bootstrap/dist/**/*',
-        dest: 'public/vendor/bootstrap'
-      }]
+      copyOnce: true,
+      targets: [
+        { src: 'node_modules/bootstrap/dist/(css|js)/*', dest: 'public/vendor/bootstrap' },
+        { src: ['node_modules/bootstrap-icons/font/*', '!**/*.html', '!**/*.json'], dest: 'public/vendor/bootstrap-icons' }
+      ]
     }),
 
     // In dev mode, call `npm run start` once
