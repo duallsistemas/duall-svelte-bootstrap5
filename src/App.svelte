@@ -1,6 +1,5 @@
 <script lang="ts">
-  import Container from '../src/components/Container.svelte';
-  import Alert from '../src/components/Alert.svelte';
+  import { Container, Alert } from './components';
 </script>
 
 <main>
