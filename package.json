@@ -1,7 +1,7 @@
 {
   "name": "@duallsistemas/duall-svelte-bootstrap5",
   "description": "Bootstrap 5 componentes for Svelte.",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "license": "MIT",
   "author": "Silvio Clecio <silvioprog@gmail.com> (silvioprog)",
   "bugs": {
@@ -12,7 +12,7 @@
     "type": "git",
     "url": "git+https://github.com/duallsistemas/duall-svelte-bootstrap5.git"
   },
-  "main": "src/components/index.ts",
+  "main": "src/components/index.js",
   "files": [
     "src/components/*"
   ],
