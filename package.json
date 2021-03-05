@@ -1,0 +1,52 @@
+{
+  "name": "@duallsistemas/duall-svelte-bootstrap5",
+  "description": "Bootstrap 5 componentes for Svelte.",
+  "version": "0.1.0",
+  "license": "MIT",
+  "author": "Silvio Clecio <silvioprog@gmail.com> (silvioprog)",
+  "bugs": {
+    "url": "https://github.com/duallsistemas/duall-svelte-bootstrap5/issues"
+  },
+  "homepage": "https://github.com/duallsistemas/duall-svelte-bootstrap5#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/duallsistemas/duall-svelte-bootstrap5.git"
+  },
+  "main": "public/build/bundle.js",
+  "files": [
+    "public/build",
+    "src/components"
+  ],
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
+    "start": "sirv public",
+    "validate": "svelte-check"
+  },
+  "prettier": {
+    "printWidth": 120,
+    "semi": true,
+    "singleQuote": true,
+    "trailingComma": "es5"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^17.0.0",
+    "@rollup/plugin-node-resolve": "^11.0.0",
+    "rollup": "^2.3.4",
+    "rollup-plugin-css-only": "^3.1.0",
+    "rollup-plugin-livereload": "^2.0.0",
+    "rollup-plugin-svelte": "^7.0.0",
+    "rollup-plugin-terser": "^7.0.0",
+    "svelte": "^3.0.0",
+    "svelte-check": "^1.0.0",
+    "svelte-preprocess": "^4.0.0",
+    "@rollup/plugin-typescript": "^8.0.0",
+    "typescript": "^4.0.0",
+    "tslib": "^2.0.0",
+    "@tsconfig/svelte": "^1.0.0"
+  },
+  "dependencies": {
+    "bootstrap": "^5.0.0-beta2",
+    "sirv-cli": "^1.0.0"
+  }
+}
