@@ -1,12 +1,17 @@
 {
   "extends": "@tsconfig/svelte/tsconfig.json",
   "include": [
-    "examples/**/*",
     "src/**/*"
   ],
   "exclude": [
-    "node_modules/*",
-    "__sapper__/*",
-    "public/*"
-  ]
+    "node_modules/*"
+  ],
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "duall-svelte-bootstrap5": [
+        "src/index"
+      ]
+    }
+  }
 }
