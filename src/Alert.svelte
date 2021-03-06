@@ -1,13 +1,14 @@
 <script lang="ts">
-  import { createEventDispatcher } from 'svelte';
-  import type { AlertType } from '../helpers/types';
-
+  export let ref: HTMLDivElement | undefined = undefined;
   export let type: AlertType | undefined = 'primary';
   export let closable = true;
   export let visible = true;
   export let message: string | undefined = undefined;
-  export let small = false;
+  export let small: boolean | undefined = undefined;
   export let timeout = 5000;
+
+  import { createEventDispatcher } from 'svelte';
+  import type { AlertType } from './types';
 
   const dispatch = createEventDispatcher();
 
@@ -26,6 +27,8 @@
 
 {#if visible}
   <div
+    bind:this={ref}
+    {...$$restProps}
     class="alert alert-dismissible alert-{type} mb-0 {$$restProps.class}"
     class:py-2={small}
     class:show={visible}
@@ -50,6 +53,9 @@
         class:py-2={small}
         class:pe-0={small}
         aria-label="Fechar"
+        on:mouseover
+        on:mouseenter
+        on:mouseleave
         on:click={() => closeHandle()}
       />
     {/if}
