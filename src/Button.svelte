@@ -18,13 +18,13 @@
 {#if href}
   <a
     bind:this={ref}
+    {...$$restProps}
     {href}
-    class="btn btn-{type}"
+    class="btn btn-{type} {$$restProps.class}"
     class:btn-sm={size === 'sm'}
     class:btn-lg={size === 'lg'}
     title={hint}
     class:disabled
-    {...$$restProps}
     on:click
     on:mouseover
     on:mouseenter
