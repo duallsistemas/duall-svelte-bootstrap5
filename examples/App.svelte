@@ -1,20 +1,23 @@
 <script lang="ts">
-  import Alert from '../src/Alert.svelte';
-  import Button from '../src/Button.svelte';
-  import Container from '../src/Container.svelte';
-  import Copyright from '../src/Copyright.svelte';
-  import Icon from '../src/Icon.svelte';
-  import Input from '../src/Input.svelte';
-  import ListGroup from '../src/ListGroup.svelte';
-  import ListGroupItem from '../src/ListGroupItem.svelte';
-  import Modal from '../src/Modal.svelte';
-  import Spinner from '../src/Spinner.svelte';
+  import {
+    Alert,
+    Button,
+    Container,
+    Copyright,
+    Icon,
+    Input,
+    ListGroup,
+    ListGroupItem,
+    Modal,
+    Spinner,
+    Window,
+  } from '..';
 
   let modalVisible = false;
 </script>
 
-<main>
-  <Container class="mt-3">
+<Container class="d-flex justify-content-center align-items-center h-100">
+  <Window title="Examples" class="py-2" width={800} returnable={false}>
     <h4>Alert</h4>
     <Alert type="success" message="Hello, world!" />
     <hr />
@@ -39,7 +42,6 @@
     </Modal>
     <hr />
     <Spinner />
-    <hr />
-    <Copyright class="text-center" />
-  </Container>
-</main>
+    <Copyright slot="footer" class="text-center mt-3" />
+  </Window>
+</Container>
