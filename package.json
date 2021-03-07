@@ -1,7 +1,7 @@
 {
   "name": "@duallsistemas/duall-svelte-bootstrap5",
   "description": "Bootstrap 5 componentes for Svelte.",
-  "version": "0.5.4",
+  "version": "0.5.5",
   "license": "MIT",
   "author": "Silvio Clecio <silvioprog@gmail.com> (silvioprog)",
   "bugs": {
@@ -14,9 +14,12 @@
   },
   "main": "dist/duall-svelte-bootstrap5.js",
   "module": "dist/duall-svelte-bootstrap5.es.js",
+  "types": "types/index.d.ts",
+  "svelte": "src/index.js",
   "files": [
     "dist",
-    "src"
+    "src",
+    "types"
   ],
   "scripts": {
     "dist": "rollup -c",
@@ -46,6 +49,7 @@
     "rollup-plugin-terser": "^7.0.0",
     "svelte": "^3.0.0",
     "svelte-check": "^1.0.0",
+    "svelte-dts": "^0.3.2",
     "svelte-preprocess": "^4.0.0",
     "tslib": "^2.0.0",
     "typescript": "^4.0.0"
