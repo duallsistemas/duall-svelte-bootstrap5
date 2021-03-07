@@ -1,3 +1,3 @@
-export function makeId(): string {
+export function makeId() {
   return 'duall-' + Math.random().toString(36);
 }
