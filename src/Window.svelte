@@ -11,7 +11,7 @@
 
   import { createEventDispatcher } from 'svelte';
 
-  import type { BackgroundColor } from './types';
+  import type { BackgroundColor } from './common';
   import Alert from './Alert.svelte';
   import Spinner from './Spinner.svelte';
   import BackButton from './BackButton.svelte';

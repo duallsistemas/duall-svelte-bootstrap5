@@ -8,7 +8,7 @@
   export let disabled: boolean | undefined = undefined;
 
   import { createEventDispatcher } from 'svelte';
-  import type { ModalSize } from './types';
+  import type { ModalSize } from './common';
 
   const dispatch = createEventDispatcher();
 

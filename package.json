@@ -1,7 +1,7 @@
 {
   "name": "@duallsistemas/duall-svelte-bootstrap5",
   "description": "Bootstrap 5 componentes for Svelte.",
-  "version": "0.5.7",
+  "version": "0.5.8",
   "license": "MIT",
   "author": "Silvio Clecio <silvioprog@gmail.com> (silvioprog)",
   "bugs": {
@@ -18,8 +18,7 @@
   "svelte": "src/index.js",
   "files": [
     "dist",
-    "src",
-    "types"
+    "src"
   ],
   "scripts": {
     "dist": "rollup -c",

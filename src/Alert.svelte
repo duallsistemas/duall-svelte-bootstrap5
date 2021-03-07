@@ -8,7 +8,7 @@
   export let timeout: number = 5000;
 
   import { createEventDispatcher } from 'svelte';
-  import type { AlertType } from './types';
+  import type { AlertType } from './common';
 
   const dispatch = createEventDispatcher();
 

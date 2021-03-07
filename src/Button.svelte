@@ -10,7 +10,7 @@
   export let loadingMessage: string | undefined = 'Carregando ...';
   export let size: ButtonSize | undefined = undefined;
 
-  import type { ButtonSize, ButtonType } from './types';
+  import type { ButtonSize, ButtonType } from './common';
   import Icon from './Icon.svelte';
   import Spinner from './Spinner.svelte';
 </script>

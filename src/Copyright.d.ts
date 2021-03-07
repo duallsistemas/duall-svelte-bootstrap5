@@ -4,6 +4,4 @@ interface ICopyrightProps {
   ref?: HTMLParagraphElement;
 }
 
-declare class Copyright extends SvelteComponentTyped<ICopyrightProps> {}
-
-export default Copyright;
+export default class Copyright extends SvelteComponentTyped<ICopyrightProps> {}
