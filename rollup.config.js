@@ -28,10 +28,10 @@ export default {
   ],
   plugins: [
     svelte({
-      // generate: production ? 'dom' : 'ssr',
-      hydratable: true,
       preprocess: sveltePreprocess({ sourceMap: !production }),
       compilerOptions: {
+        // generate: production ? 'dom' : 'ssr',
+        hydratable: true,
         dev: !production
       }
     }),
