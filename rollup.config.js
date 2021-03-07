@@ -4,7 +4,6 @@ import resolve from '@rollup/plugin-node-resolve';
 import { terser } from 'rollup-plugin-terser';
 import sveltePreprocess from 'svelte-preprocess';
 import typescript from '@rollup/plugin-typescript';
-import svelteDts from 'svelte-dts';
 import pkg from './package.json';
 
 const production = !process.env.ROLLUP_WATCH;
@@ -34,10 +33,6 @@ export default ["es", "umd"].map((format) => {
       resolve(),
       commonjs(),
       typescript(),
-      svelteDts({
-        extensions: [".svelte", ".ts"],
-        output: pkg.types
-      }),
       production && terser()
     ],
     watch: {
