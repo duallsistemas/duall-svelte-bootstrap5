@@ -1,6 +1,6 @@
 <script lang="ts">
   export let ref: HTMLDivElement | undefined = undefined;
-  export let title = 'Carregando ...';
+  export let title: string = 'Carregando ...';
   export let small: boolean | undefined = undefined;
   export let center: boolean | undefined = undefined;
 </script>

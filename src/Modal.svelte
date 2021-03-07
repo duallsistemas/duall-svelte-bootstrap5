@@ -4,7 +4,7 @@
   export let title: string | undefined = undefined;
   export let visible: boolean | undefined = undefined;
   export let body: string | undefined = undefined;
-  export let closable = true;
+  export let closable: boolean = true;
   export let disabled: boolean | undefined = undefined;
 
   import { createEventDispatcher } from 'svelte';

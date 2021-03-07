@@ -1,13 +1,13 @@
 <script lang="ts">
   export let ref: HTMLDivElement | undefined = undefined;
   export let title: string | undefined = undefined;
-  export let returnable = true;
+  export let returnable: boolean = true;
   export let width: string | number = 'auto';
   export let height: string | number = 'auto';
   export let backgroundColor: BackgroundColor = 'body';
   export let loading: boolean | undefined = undefined;
   export let errorMessage: string | undefined = undefined;
-  export let errorTimeout = 5000;
+  export let errorTimeout: number = 5000;
 
   import { createEventDispatcher } from 'svelte';
 

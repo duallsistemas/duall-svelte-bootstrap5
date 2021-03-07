@@ -1,11 +1,11 @@
 <script lang="ts">
   export let ref: HTMLDivElement | undefined = undefined;
   export let type: AlertType | undefined = 'primary';
-  export let closable = true;
-  export let visible = true;
+  export let closable: boolean = true;
+  export let visible: boolean = true;
   export let message: string | undefined = undefined;
   export let small: boolean | undefined = undefined;
-  export let timeout = 5000;
+  export let timeout: number = 5000;
 
   import { createEventDispatcher } from 'svelte';
   import type { AlertType } from './types';

@@ -1,8 +1,8 @@
 <script lang="ts">
   export let ref: HTMLInputElement | undefined = undefined;
-  export let id = makeId();
+  export let id: string = makeId();
   export let list: Array<string> | undefined = undefined;
-  export let listId = makeId();
+  export let listId: string = makeId();
   export let listClass: string | undefined = undefined;
   export let listItemClass: string | undefined = undefined;
   export let label: string | undefined = undefined;

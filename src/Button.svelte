@@ -7,7 +7,7 @@
   export let href: string | undefined = undefined;
   export let disabled: boolean | undefined = undefined;
   export let loading: boolean | undefined = undefined;
-  export let loadingMessage = 'Carregando ...';
+  export let loadingMessage: string | undefined = 'Carregando ...';
   export let size: ButtonSize | undefined = undefined;
 
   import type { ButtonSize, ButtonType } from './types';
