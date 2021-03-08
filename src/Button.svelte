@@ -1,5 +1,5 @@
 <script lang="ts">
-  export let ref: HTMLButtonElement | HTMLAnchorElement | undefined = undefined;
+  export let ref: any | undefined = undefined;
   export let type: ButtonType | undefined = 'primary';
   export let title: string | undefined = undefined;
   export let hint: string | undefined = undefined;
@@ -42,8 +42,8 @@
   </a>
 {:else}
   <button
-    {...$$restProps}
     bind:this={ref}
+    {...$$restProps}
     type="button"
     class="btn btn-{type} {$$restProps.class}"
     class:btn-sm={size === 'sm'}

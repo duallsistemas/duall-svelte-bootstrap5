@@ -1,9 +1,8 @@
 import { SvelteComponentTyped } from 'svelte';
 
-import { ModalSize } from './common';
+import { ModalSize, IComponentProps } from './common';
 
-interface IModalProps {
-  ref?: HTMLDivElement;
+interface IModalProps extends IComponentProps {
   size?: ModalSize;
   title?: string;
   visible?: boolean;

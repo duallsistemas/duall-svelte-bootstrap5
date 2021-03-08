@@ -1,5 +1,5 @@
 <script lang="ts">
-  export let ref: HTMLDivElement | undefined = undefined;
+  export let ref: any | undefined = undefined;
   export let title: string | undefined = undefined;
   export let returnable: boolean = true;
   export let width: string | number = 'auto';

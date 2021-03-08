@@ -1,7 +1,8 @@
 import { SvelteComponentTyped } from 'svelte';
 
-interface IListGroupItemProps {
-  ref?: HTMLLIElement | HTMLButtonElement | HTMLAnchorElement;
+import { IComponentProps } from './common';
+
+interface IListGroupItemProps extends IComponentProps {
   title?: string;
   icon?: string;
   action?: boolean;

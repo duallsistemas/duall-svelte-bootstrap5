@@ -1,5 +1,5 @@
 <script lang="ts">
-  export let ref: HTMLDivElement | undefined = undefined;
+  export let ref: any | undefined = undefined;
   export let type: AlertType | undefined = 'primary';
   export let closable: boolean = true;
   export let visible: boolean = true;

@@ -1,5 +1,5 @@
 <script lang="ts">
-  export let ref: HTMLUListElement | undefined = undefined;
+  export let ref: any | undefined = undefined;
   export let flush: boolean | undefined = undefined;
 </script>
 

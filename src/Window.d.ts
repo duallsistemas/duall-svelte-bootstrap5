@@ -1,9 +1,8 @@
 import { SvelteComponentTyped } from 'svelte';
 
-import { BackgroundColor } from './common';
+import { BackgroundColor, IComponentProps } from './common';
 
-interface IWindowProps {
-  ref?: HTMLDivElement;
+interface IWindowProps extends IComponentProps {
   title?: string;
   returnable: boolean;
   width: string | number;

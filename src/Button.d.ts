@@ -1,9 +1,8 @@
 import { SvelteComponentTyped } from 'svelte';
 
-import { ButtonType, ButtonSize } from './common';
+import { ButtonType, ButtonSize, IComponentProps } from './common';
 
-interface IButtonProps {
-  ref?: HTMLButtonElement | HTMLAnchorElement;
+interface IButtonProps extends IComponentProps {
   type?: ButtonType;
   title?: string;
   hint?: string;

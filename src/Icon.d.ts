@@ -1,6 +1,8 @@
 import { SvelteComponentTyped } from 'svelte';
 
-interface IIconProps {
+import { IComponentProps } from './common';
+
+interface IIconProps extends IComponentProps {
   icon: string;
 }
 

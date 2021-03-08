@@ -1,7 +1,8 @@
 import { SvelteComponentTyped } from 'svelte';
 
-interface IInputProps {
-  ref?: HTMLInputElement;
+import { IComponentProps } from './common';
+
+interface IInputProps extends IComponentProps {
   id: string;
   list?: Array<string>;
   listId: string;

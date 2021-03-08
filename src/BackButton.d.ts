@@ -1,5 +1,7 @@
 import { SvelteComponentTyped } from 'svelte';
 
-interface IBackButtonProps {}
+import { IComponentProps } from './common';
+
+interface IBackButtonProps extends IComponentProps {}
 
 export default class BackButton extends SvelteComponentTyped<IBackButtonProps> {}

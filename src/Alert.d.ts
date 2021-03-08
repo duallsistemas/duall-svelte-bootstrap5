@@ -1,9 +1,8 @@
 import { SvelteComponentTyped } from 'svelte';
 
-import { AlertType } from './common';
+import { AlertType, IComponentProps } from './common';
 
-interface IAlertProps {
-  ref?: HTMLDivElement;
+interface IAlertProps extends IComponentProps {
   type?: AlertType;
   closable: boolean;
   visible: boolean;

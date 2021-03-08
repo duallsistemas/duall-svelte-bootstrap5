@@ -1,5 +1,5 @@
 <script lang="ts">
-  export let ref: HTMLInputElement | undefined = undefined;
+  export let ref: any | undefined = undefined;
   export let id: string | undefined = undefined;
   export let list: Array<string> | undefined = undefined;
   export let listId: string | undefined = undefined;
@@ -23,8 +23,8 @@
   </label>
 {/if}
 <input
-  {...$$restProps}
   bind:this={ref}
+  {...$$restProps}
   id={label ? id : undefined}
   class="form-control {$$restProps.class}"
   list={list && list.length > 0 ? listId : undefined}

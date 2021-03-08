@@ -1,7 +1,8 @@
 import { SvelteComponentTyped } from 'svelte';
 
-interface IListGroupProps {
-  ref?: HTMLUListElement;
+import { IComponentProps } from './common';
+
+interface IListGroupProps extends IComponentProps {
   flush?: boolean;
 }
 

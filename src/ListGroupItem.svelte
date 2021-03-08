@@ -1,5 +1,5 @@
 <script lang="ts">
-  export let ref: HTMLLIElement | HTMLButtonElement | HTMLAnchorElement | undefined = undefined;
+  export let ref: any | undefined = undefined;
   export let title: string | undefined = undefined;
   export let icon: string | undefined = undefined;
   export let action: boolean | undefined = undefined;
@@ -53,7 +53,7 @@
     </button>
   {/if}
 {:else}
-  <li bind:this={ref} class="list-group-item" class:disabled title={hint} {...$$restProps} on:click>
+  <li bind:this={ref} {...$$restProps} class="list-group-item {$$restProps.class}" class:disabled title={hint} on:click>
     {#if title}
       {@html title}
     {/if}

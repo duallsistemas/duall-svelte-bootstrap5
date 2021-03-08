@@ -27,3 +27,10 @@ export declare type ButtonType =
 export declare type ButtonSize = 'sm' | 'lg';
 
 export declare type ModalSize = 'sm' | 'lg' | 'xl' | 'fullscreen';
+
+export declare interface IComponentProps {
+  ref?: any;
+  children?: any;
+  class?: string;
+  [key: string]: any;
+}

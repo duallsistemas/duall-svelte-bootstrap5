@@ -1,7 +1,8 @@
 import { SvelteComponentTyped } from 'svelte';
 
-interface ISpinnerProps {
-  ref?: HTMLDivElement;
+import { IComponentProps } from './common';
+
+interface ISpinnerProps extends IComponentProps {
   title: string;
   small?: boolean;
   center?: boolean;

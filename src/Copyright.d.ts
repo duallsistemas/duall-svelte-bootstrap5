@@ -1,7 +1,7 @@
 import { SvelteComponentTyped } from 'svelte';
 
-interface ICopyrightProps {
-  ref?: HTMLParagraphElement;
-}
+import { IComponentProps } from './common';
+
+interface ICopyrightProps extends IComponentProps {}
 
 export default class Copyright extends SvelteComponentTyped<ICopyrightProps> {}
