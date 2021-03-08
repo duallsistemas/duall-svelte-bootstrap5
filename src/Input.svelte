@@ -7,6 +7,8 @@
   export let listItemClass: string | undefined = undefined;
   export let label: string | undefined = undefined;
   export let labelClass: string | undefined = undefined;
+  export let labelHidden: boolean | undefined = undefined;
+  export let title: string | undefined = undefined;
 
   import { onMount } from 'svelte';
   import { makeId } from './utils';
@@ -17,9 +19,13 @@
   });
 </script>
 
-{#if label}
-  <label class={labelClass} for={id}>
-    {@html label}
+{#if label || title}
+  <label class={labelClass} for={id} class:visually-hidden={labelHidden}>
+    {#if labelHidden && title}
+      {@html title}
+    {:else}
+      {@html label}
+    {/if}
   </label>
 {/if}
 <input
@@ -28,6 +34,7 @@
   id={label ? id : undefined}
   class="form-control {$$restProps.class}"
   list={list && list.length > 0 ? listId : undefined}
+  {title}
   on:change
   on:input
   on:keydown
