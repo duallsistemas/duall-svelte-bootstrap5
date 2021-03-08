@@ -8,6 +8,8 @@ import Input from './Input';
 import ListGroup from './ListGroup';
 import ListGroupItem from './ListGroupItem';
 import Modal from './Modal';
+import Select from './Select';
+import SelectOption from './SelectOption';
 import Spinner from './Spinner';
 import Window from './Window';
 
@@ -22,6 +24,8 @@ export {
   ListGroup,
   ListGroupItem,
   Modal,
+  Select,
+  SelectOption,
   Spinner,
   Window,
 };
