@@ -7,7 +7,7 @@ interface IModalProps extends IComponentProps {
   title?: string;
   visible?: boolean;
   body?: string;
-  closable: boolean;
+  closable?: boolean;
   disabled?: boolean;
 }
 

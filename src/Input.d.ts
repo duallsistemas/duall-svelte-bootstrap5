@@ -3,9 +3,9 @@ import { SvelteComponentTyped } from 'svelte';
 import { IComponentProps } from './common';
 
 interface IInputProps extends IComponentProps {
-  id: string;
+  id?: string;
   list?: Array<string>;
-  listId: string;
+  listId?: string;
   listClass?: string;
   listItemClass?: string;
   label?: string;

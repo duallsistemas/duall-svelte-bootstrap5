@@ -4,11 +4,11 @@ import { AlertType, IComponentProps } from './common';
 
 interface IAlertProps extends IComponentProps {
   type?: AlertType;
-  closable: boolean;
-  visible: boolean;
+  closable?: boolean;
+  visible?: boolean;
   message?: string;
   small?: boolean;
-  timeout: number;
+  timeout?: number;
 }
 
 export default class Alert extends SvelteComponentTyped<

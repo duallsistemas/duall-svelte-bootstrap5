@@ -4,13 +4,13 @@ import { BackgroundColor, IComponentProps } from './common';
 
 interface IWindowProps extends IComponentProps {
   title?: string;
-  returnable: boolean;
-  width: string | number;
-  height: string | number;
-  backgroundColor: BackgroundColor;
+  returnable?: boolean;
+  width?: string | number;
+  height?: string | number;
+  backgroundColor?: BackgroundColor;
   loading?: boolean;
   errorMessage?: string;
-  errorTimeout: number;
+  errorTimeout?: number;
 }
 
 export default class Window extends SvelteComponentTyped<
