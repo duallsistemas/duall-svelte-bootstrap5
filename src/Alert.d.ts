@@ -1,9 +1,9 @@
 import { SvelteComponentTyped } from 'svelte';
 
-import { AlertType, IComponentProps } from './common';
+import { AlertColor, IComponentProps } from './common';
 
 interface IAlertProps extends IComponentProps {
-  type?: AlertType;
+  color?: AlertColor;
   closable?: boolean;
   visible?: boolean;
   message?: string;

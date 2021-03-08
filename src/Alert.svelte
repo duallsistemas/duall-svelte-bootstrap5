@@ -1,6 +1,6 @@
 <script lang="ts">
   export let ref: any | undefined = undefined;
-  export let type: AlertType | undefined = 'primary';
+  export let color: AlertColor | undefined = 'primary';
   export let closable: boolean = true;
   export let visible: boolean = true;
   export let message: string | undefined = undefined;
@@ -8,7 +8,7 @@
   export let timeout: number = 5000;
 
   import { createEventDispatcher } from 'svelte';
-  import type { AlertType } from './common';
+  import type { AlertColor } from './common';
 
   const dispatch = createEventDispatcher();
 
@@ -29,7 +29,7 @@
   <div
     bind:this={ref}
     {...$$restProps}
-    class="alert alert-dismissible alert-{type} mb-0 {$$restProps.class}"
+    class="alert alert-dismissible alert-{color} mb-0 {$$restProps.class}"
     class:py-2={small}
     class:show={visible}
     role="alert"

@@ -1,6 +1,6 @@
 <script lang="ts">
   export let ref: any | undefined = undefined;
-  export let type: ButtonType | undefined = 'primary';
+  export let color: ButtonColor | undefined = 'primary';
   export let title: string | undefined = undefined;
   export let hint: string | undefined = undefined;
   export let icon: string | undefined = undefined;
@@ -10,7 +10,7 @@
   export let loadingMessage: string | undefined = 'Carregando ...';
   export let size: ButtonSize | undefined = undefined;
 
-  import type { ButtonSize, ButtonType } from './common';
+  import type { ButtonSize, ButtonColor } from './common';
   import Icon from './Icon.svelte';
   import Spinner from './Spinner.svelte';
 </script>
@@ -20,7 +20,7 @@
     bind:this={ref}
     {...$$restProps}
     {href}
-    class="btn btn-{type} {$$restProps.class}"
+    class="btn btn-{color} {$$restProps.class}"
     class:btn-sm={size === 'sm'}
     class:btn-lg={size === 'lg'}
     title={hint}
@@ -45,7 +45,7 @@
     bind:this={ref}
     {...$$restProps}
     type="button"
-    class="btn btn-{type} {$$restProps.class}"
+    class="btn btn-{color} {$$restProps.class}"
     class:btn-sm={size === 'sm'}
     class:btn-lg={size === 'lg'}
     title={hint}

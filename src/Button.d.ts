@@ -1,9 +1,9 @@
 import { SvelteComponentTyped } from 'svelte';
 
-import { ButtonType, ButtonSize, IComponentProps } from './common';
+import { ButtonColor, ButtonSize, IComponentProps } from './common';
 
 interface IButtonProps extends IComponentProps {
-  type?: ButtonType;
+  color?: ButtonColor;
   title?: string;
   hint?: string;
   icon?: string;

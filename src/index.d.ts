@@ -11,6 +11,7 @@ import Modal from './Modal';
 import Select from './Select';
 import SelectOption from './SelectOption';
 import Spinner from './Spinner';
+import Table from './Table';
 import Window from './Window';
 
 export {

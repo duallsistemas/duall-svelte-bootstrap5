@@ -11,9 +11,9 @@ export declare type BackgroundColor =
   | 'white'
   | 'transparent';
 
-export declare type AlertType = 'primary' | 'secondary' | 'success' | 'danger' | 'warning' | 'info' | 'light' | 'dark';
+export declare type AlertColor = 'primary' | 'secondary' | 'success' | 'danger' | 'warning' | 'info' | 'light' | 'dark';
 
-export declare type ButtonType =
+export declare type ButtonColor =
   | 'primary'
   | 'secondary'
   | 'success'
@@ -25,6 +25,12 @@ export declare type ButtonType =
   | 'link';
 
 export declare type ButtonSize = 'sm' | 'lg';
+
+export declare type TableColor = 'primary' | 'secondary' | 'success' | 'danger' | 'warning' | 'info' | 'light' | 'dark';
+
+export declare type TableSize = 'sm';
+
+export declare type TableResponsiveSize = '' | 'sm' | 'md' | 'lg' | 'xl' | 'xxl';
 
 export declare type ModalSize = 'sm' | 'lg' | 'xl' | 'fullscreen';
 
