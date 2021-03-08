@@ -2,8 +2,10 @@
   export let ref: any | undefined = undefined;
   export let color: TableColor | undefined = undefined;
   export let scope: 'row' | 'col' | undefined = undefined;
+  export let alignment: TextAlignment | undefined = undefined;
+  export let verticalAlignment: VerticalAlignment | undefined = undefined;
 
-  import type { TableColor } from './common';
+  import type { TableColor, TextAlignment, VerticalAlignment } from './common';
 </script>
 
 <th
@@ -17,6 +19,15 @@
   class:table-info={color === 'info'}
   class:table-light={color === 'light'}
   class:table-dark={color === 'dark'}
+  class:text-start={alignment === 'start'}
+  class:text-center={alignment === 'center'}
+  class:text-end={alignment === 'end'}
+  class:align-baseline={verticalAlignment === 'baseline'}
+  class:align-top={verticalAlignment === 'top'}
+  class:align-middle={verticalAlignment === 'middle'}
+  class:align-bottom={verticalAlignment === 'bottom'}
+  class:align-text-top={verticalAlignment === 'text-top'}
+  class:align-text-bottom={verticalAlignment === 'text-bottom'}
   class={$$restProps.class}
   {scope}
 >
