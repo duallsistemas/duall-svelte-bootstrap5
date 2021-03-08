@@ -8,7 +8,7 @@
   export let borderless: boolean | undefined = undefined;
   export let striped: boolean | undefined = undefined;
   export let hover: boolean | undefined = undefined;
-  export let responsiveSize: TableResponsiveSize | undefined = undefined;
+  export let responsiveSize: TableResponsiveSize | '' | undefined = undefined;
 
   import type { TableColor, TableResponsiveSize, TableSize } from './common';
   import TableResponsive from './TableResponsive.svelte';

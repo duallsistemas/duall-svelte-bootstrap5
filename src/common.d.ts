@@ -30,7 +30,7 @@ export declare type TableColor = 'primary' | 'secondary' | 'success' | 'danger' 
 
 export declare type TableSize = 'sm';
 
-export declare type TableResponsiveSize = '' | 'sm' | 'md' | 'lg' | 'xl' | 'xxl';
+export declare type TableResponsiveSize = 'sm' | 'md' | 'lg' | 'xl' | 'xxl';
 
 export declare type ModalSize = 'sm' | 'lg' | 'xl' | 'fullscreen';
 

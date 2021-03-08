@@ -1,6 +1,6 @@
 <script lang="ts">
   export let ref: any | undefined = undefined;
-  export let responsiveSize: TableResponsiveSize | undefined = undefined;
+  export let responsiveSize: TableResponsiveSize | '' | undefined = undefined;
 
   import type { TableResponsiveSize } from './common';
 </script>
