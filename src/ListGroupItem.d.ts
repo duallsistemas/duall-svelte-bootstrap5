@@ -11,4 +11,13 @@ interface IListGroupItemProps extends IComponentProps {
   disabled?: boolean;
 }
 
-export default class ListGroupItem extends SvelteComponentTyped<IListGroupItemProps, {}, { default: any }> {}
+export default class ListGroupItem extends SvelteComponentTyped<
+  IListGroupItemProps,
+  {
+    click: WindowEventMap['click'];
+    mouseover: WindowEventMap['mouseover'];
+    mouseenter: WindowEventMap['mouseenter'];
+    mouseleave: WindowEventMap['mouseleave'];
+  },
+  { default: any }
+> {}

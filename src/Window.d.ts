@@ -15,6 +15,6 @@ interface IWindowProps extends IComponentProps {
 
 export default class Window extends SvelteComponentTyped<
   IWindowProps,
-  {},
+  { errorTimeout: CustomEvent<any> },
   { header: any; default: any; footer: any }
 > {}

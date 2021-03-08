@@ -11,4 +11,10 @@ interface IModalProps extends IComponentProps {
   disabled?: boolean;
 }
 
-export default class Modal extends SvelteComponentTyped<IModalProps, {}, { title: any; body: any; footer: any }> {}
+export default class Modal extends SvelteComponentTyped<
+  IModalProps,
+  {
+    close: CustomEvent<any>;
+  },
+  { title: any; body: any; footer: any }
+> {}

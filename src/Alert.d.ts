@@ -11,4 +11,14 @@ interface IAlertProps extends IComponentProps {
   timeout: number;
 }
 
-export default class Alert extends SvelteComponentTyped<IAlertProps, {}, { default: any }> {}
+export default class Alert extends SvelteComponentTyped<
+  IAlertProps,
+  {
+    mouseover: WindowEventMap['mouseover'];
+    mouseenter: WindowEventMap['mouseenter'];
+    mouseleave: WindowEventMap['mouseleave'];
+    close: CustomEvent<any>;
+    timeout: CustomEvent<number>;
+  },
+  { default: any }
+> {}

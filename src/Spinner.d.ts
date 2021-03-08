@@ -8,4 +8,4 @@ interface ISpinnerProps extends IComponentProps {
   center?: boolean;
 }
 
-export default class Spinner extends SvelteComponentTyped<ISpinnerProps> {}
+export default class Spinner extends SvelteComponentTyped<ISpinnerProps, { click: WindowEventMap['click'] }> {}

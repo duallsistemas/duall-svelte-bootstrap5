@@ -12,4 +12,14 @@ interface IInputProps extends IComponentProps {
   labelClass?: string;
 }
 
-export default class Input extends SvelteComponentTyped<IInputProps> {}
+export default class Input extends SvelteComponentTyped<
+  IInputProps,
+  {
+    change: WindowEventMap['change'];
+    input: WindowEventMap['input'];
+    keydown: WindowEventMap['keydown'];
+    keypress: WindowEventMap['keypress'];
+    focus: WindowEventMap['focus'];
+    blur: WindowEventMap['blur'];
+  }
+> {}

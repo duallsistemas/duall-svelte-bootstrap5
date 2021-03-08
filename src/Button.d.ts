@@ -14,4 +14,13 @@ interface IButtonProps extends IComponentProps {
   size?: ButtonSize;
 }
 
-export default class Button extends SvelteComponentTyped<IButtonProps, {}, { default: any }> {}
+export default class Button extends SvelteComponentTyped<
+  IButtonProps,
+  {
+    click: WindowEventMap['click'];
+    mouseover: WindowEventMap['mouseover'];
+    mouseenter: WindowEventMap['mouseenter'];
+    mouseleave: WindowEventMap['mouseleave'];
+  },
+  { default: any }
+> {}
