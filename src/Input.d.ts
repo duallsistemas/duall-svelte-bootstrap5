@@ -10,6 +10,7 @@ interface IInputProps extends IComponentProps {
   listItemClass?: string;
   label?: string;
   labelClass?: string;
+  labelHidden?: boolean;
   title?: string;
 }
 
