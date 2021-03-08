@@ -1,6 +1,13 @@
 import { SvelteComponentTyped } from 'svelte';
 
-import { IComponentProps, TableColor, TableResponsiveSize, TableSize } from './common';
+import {
+  IComponentProps,
+  TableColor,
+  TableResponsiveSize,
+  TableSize,
+  TextAlignment,
+  VerticalAlignment,
+} from './common';
 
 interface ITableProps extends IComponentProps {
   caption?: string;
@@ -11,6 +18,8 @@ interface ITableProps extends IComponentProps {
   borderless?: boolean;
   striped?: boolean;
   hover?: boolean;
+  alignment: TextAlignment;
+  verticalAlignment?: VerticalAlignment;
   responsiveSize?: TableResponsiveSize;
 }
 

@@ -8,9 +8,11 @@
   export let borderless: boolean | undefined = undefined;
   export let striped: boolean | undefined = undefined;
   export let hover: boolean | undefined = undefined;
+  export let alignment: TextAlignment | undefined = undefined;
+  export let verticalAlignment: VerticalAlignment | undefined = undefined;
   export let responsiveSize: TableResponsiveSize | '' | undefined = undefined;
 
-  import type { TableColor, TableResponsiveSize, TableSize } from './common';
+  import type { TableColor, TableResponsiveSize, TableSize, TextAlignment, VerticalAlignment } from './common';
   import TableResponsive from './TableResponsive.svelte';
 </script>
 
@@ -32,6 +34,15 @@
     class:table-light={color === 'light'}
     class:table-dark={color === 'dark'}
     class:table-sm={size === 'sm'}
+    class:text-start={alignment === 'start'}
+    class:text-center={alignment === 'center'}
+    class:text-end={alignment === 'end'}
+    class:align-baseline={verticalAlignment === 'baseline'}
+    class:align-top={verticalAlignment === 'top'}
+    class:align-middle={verticalAlignment === 'middle'}
+    class:align-bottom={verticalAlignment === 'bottom'}
+    class:align-text-top={verticalAlignment === 'text-top'}
+    class:align-text-bottom={verticalAlignment === 'text-bottom'}
     class="table {$$restProps.class}"
   >
     {#if caption}

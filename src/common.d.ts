@@ -1,3 +1,7 @@
+export declare type TextAlignment = 'start' | 'center' | 'end';
+
+export declare type VerticalAlignment = 'baseline' | 'top' | 'middle' | 'bottom' | 'text-top' | 'text-bottom';
+
 export declare type BackgroundColor =
   | 'primary'
   | 'secondary'
