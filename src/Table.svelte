@@ -2,7 +2,7 @@
   export let ref: any | undefined = undefined;
   export let caption: string | undefined = undefined;
   export let captionTop: boolean | undefined = undefined;
-  export let color: TableColor | undefined = 'primary';
+  export let color: TableColor | undefined = undefined;
   export let size: TableSize | undefined = undefined;
   export let bordered: boolean | undefined = true;
   export let borderless: boolean | undefined = undefined;

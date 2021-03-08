@@ -4,7 +4,7 @@
   export let returnable: boolean = true;
   export let width: string | number = 'auto';
   export let height: string | number = 'auto';
-  export let backgroundColor: BackgroundColor = 'body';
+  export let backgroundColor: BackgroundColor | undefined = 'body';
   export let loading: boolean | undefined = undefined;
   export let errorMessage: string | undefined = undefined;
   export let errorTimeout: number = 5000;

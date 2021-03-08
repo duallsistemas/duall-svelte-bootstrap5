@@ -1,6 +1,6 @@
 <script lang="ts">
   export let ref: any | undefined = undefined;
-  export let color: TableColor | undefined = 'primary';
+  export let color: TableColor | undefined = undefined;
   export let scope: 'row' | 'col' | undefined = undefined;
 
   import type { TableColor } from './common';
