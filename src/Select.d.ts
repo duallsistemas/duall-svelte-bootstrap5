@@ -4,7 +4,7 @@ import { IComponentProps } from './common';
 
 interface ISelectProps extends IComponentProps {
   id?: string;
-  value?: number | boolean | string;
+  value?: any;
   label?: string;
   labelClass?: string;
   labelHidden?: boolean;

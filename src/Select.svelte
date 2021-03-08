@@ -1,7 +1,7 @@
 <script lang="ts">
   export let ref: any | undefined = undefined;
   export let id: string | undefined = undefined;
-  export let value: number | boolean | string | undefined = undefined;
+  export let value: any | undefined = undefined;
   export let label: string | undefined = undefined;
   export let labelClass: string | undefined = undefined;
   export let labelHidden: boolean | undefined = undefined;
