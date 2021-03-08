@@ -22,5 +22,5 @@ export default class Table extends SvelteComponentTyped<
     mouseenter: WindowEventMap['mouseenter'];
     mouseleave: WindowEventMap['mouseleave'];
   },
-  { caption: any; head: any; body: any }
+  { caption: any; default: any }
 > {}

@@ -40,11 +40,6 @@
         <slot name="caption" />
       </caption>
     {/if}
-    <thead>
-      <slot name="head" />
-    </thead>
-    <tbody>
-      <slot name="body" />
-    </tbody>
+    <slot />
   </table>
 </TableResponsive>

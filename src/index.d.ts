@@ -12,6 +12,12 @@ import Select from './Select';
 import SelectOption from './SelectOption';
 import Spinner from './Spinner';
 import Table from './Table';
+import TableBody from './TableBody';
+import TableCol from './TableCol';
+import TableData from './TableData';
+import TableHead from './TableHead';
+import TableResponsive from './TableResponsive';
+import TableRow from './TableRow';
 import Window from './Window';
 
 export {
@@ -28,5 +34,12 @@ export {
   Select,
   SelectOption,
   Spinner,
+  Table,
+  TableBody,
+  TableCol,
+  TableData,
+  TableHead,
+  TableResponsive,
+  TableRow,
   Window,
 };
