@@ -5,7 +5,7 @@ import { IComponentProps, TableColor, TextAlignment, VerticalAlignment } from '.
 interface ITableRowProps extends IComponentProps {
   color?: TableColor;
   active?: boolean;
-  alignment: TextAlignment;
+  alignment?: TextAlignment;
   verticalAlignment?: VerticalAlignment;
 }
 

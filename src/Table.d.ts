@@ -18,7 +18,7 @@ interface ITableProps extends IComponentProps {
   borderless?: boolean;
   striped?: boolean;
   hover?: boolean;
-  alignment: TextAlignment;
+  alignment?: TextAlignment;
   verticalAlignment?: VerticalAlignment;
   responsiveSize?: TableResponsiveSize;
 }
