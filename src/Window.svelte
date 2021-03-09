@@ -7,7 +7,7 @@
   export let backgroundColor: BackgroundColor | undefined = 'body';
   export let loading: boolean | undefined = undefined;
   export let message: string | undefined = undefined;
-  export let messageColor: AlertColor | undefined = 'danger';
+  export let messageColor: AlertColor | undefined = 'primary';
   export let messageTimeout: number = 5000;
   export let messageCentered: boolean | undefined = undefined;
 
