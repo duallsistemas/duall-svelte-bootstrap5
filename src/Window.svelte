@@ -50,7 +50,7 @@
   <slot />
   {#if errorMessage}
     <Alert
-      type="danger"
+      color="danger"
       message={errorMessage}
       timeout={errorTimeout}
       center={errorCenter}

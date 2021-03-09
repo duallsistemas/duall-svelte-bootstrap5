@@ -1,7 +1,7 @@
 {
   "name": "@duallsistemas/duall-svelte-bootstrap5",
   "description": "Bootstrap 5 componentes for Svelte.",
-  "version": "0.11.2",
+  "version": "0.11.3",
   "license": "MIT",
   "author": "Silvio Clecio <silvioprog@gmail.com> (silvioprog)",
   "bugs": {
