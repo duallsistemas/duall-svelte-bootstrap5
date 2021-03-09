@@ -9,7 +9,7 @@ interface ISelectProps extends IComponentProps {
   labelClass?: string;
   labelHidden?: boolean;
   title?: string;
-  defaultItem?: string | undefined;
+  defaultItem?: string;
 }
 
 export default class Select extends SvelteComponentTyped<

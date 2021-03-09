@@ -1,6 +1,6 @@
 import { SvelteComponentTyped } from 'svelte';
 
-import { BackgroundColor, IComponentProps } from './common';
+import { AlertColor, BackgroundColor, IComponentProps } from './common';
 
 interface IWindowProps extends IComponentProps {
   title?: string;
