@@ -8,6 +8,7 @@
   export let loading: boolean | undefined = undefined;
   export let errorMessage: string | undefined = undefined;
   export let errorTimeout: number = 5000;
+  export let errorCenter: boolean | undefined = undefined;
 
   import { createEventDispatcher } from 'svelte';
 
@@ -23,7 +24,6 @@
 <div
   bind:this={ref}
   {...$$restProps}
-  class="shadow rounded-3 px-3 {$$restProps.class}"
   class:bg-primary={backgroundColor === 'primary'}
   class:bg-secondary={backgroundColor === 'secondary'}
   class:bg-success={backgroundColor === 'success'}
@@ -35,6 +35,7 @@
   class:bg-body={backgroundColor === 'body'}
   class:bg-white={backgroundColor === 'white'}
   class:bg-transparent={backgroundColor === 'transparent'}
+  class="shadow rounded-3 px-3 {$$restProps.class}"
   style="width: {getDimension(width)}; height: {getDimension(height)};"
 >
   {#if title}
@@ -52,6 +53,7 @@
       type="danger"
       message={errorMessage}
       timeout={errorTimeout}
+      center={errorCenter}
       small
       class="my-2"
       on:timeout={() => dispatch('errorTimeout')}

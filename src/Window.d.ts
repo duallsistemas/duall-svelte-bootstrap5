@@ -11,6 +11,7 @@ interface IWindowProps extends IComponentProps {
   loading?: boolean;
   errorMessage?: string;
   errorTimeout?: number;
+  errorCenter?: boolean;
 }
 
 export default class Window extends SvelteComponentTyped<

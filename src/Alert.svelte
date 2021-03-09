@@ -6,6 +6,7 @@
   export let message: string | undefined = undefined;
   export let small: boolean | undefined = undefined;
   export let timeout: number = 5000;
+  export let center: boolean | undefined = undefined;
 
   import { createEventDispatcher } from 'svelte';
   import type { AlertColor } from './common';
@@ -32,6 +33,11 @@
     class="alert alert-dismissible alert-{color} mb-0 {$$restProps.class}"
     class:py-2={small}
     class:show={visible}
+    class:position-absolute={center}
+    class:top-50={center}
+    class:start-50={center}
+    class:translate-middle={center}
+    class:d-table={center}
     role="alert"
   >
     <h6 class="my-0">

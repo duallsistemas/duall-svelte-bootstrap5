@@ -9,6 +9,7 @@ interface IAlertProps extends IComponentProps {
   message?: string;
   small?: boolean;
   timeout?: number;
+  center?: boolean;
 }
 
 export default class Alert extends SvelteComponentTyped<
