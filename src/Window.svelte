@@ -6,13 +6,14 @@
   export let height: string | number = 'auto';
   export let backgroundColor: BackgroundColor | undefined = 'body';
   export let loading: boolean | undefined = undefined;
-  export let errorMessage: string | undefined = undefined;
-  export let errorTimeout: number = 5000;
-  export let errorCenter: boolean | undefined = undefined;
+  export let message: string | undefined = undefined;
+  export let messageColor: AlertColor | undefined = 'danger';
+  export let messageTimeout: number = 5000;
+  export let messageCentered: boolean | undefined = undefined;
 
   import { createEventDispatcher } from 'svelte';
 
-  import type { BackgroundColor } from './common';
+  import type { AlertColor, BackgroundColor } from './common';
   import { getDimension } from './utils';
   import Alert from './Alert.svelte';
   import Spinner from './Spinner.svelte';
@@ -48,15 +49,15 @@
     <Spinner center />
   {/if}
   <slot />
-  {#if errorMessage}
+  {#if message}
     <Alert
-      color="danger"
-      message={errorMessage}
-      timeout={errorTimeout}
-      center={errorCenter}
+      {message}
+      color={messageColor}
+      timeout={messageTimeout}
+      center={messageCentered}
       small
       class="my-2"
-      on:timeout={() => dispatch('errorTimeout')}
+      on:timeout={() => dispatch('messageTimeout')}
     />
   {/if}
   {#if returnable}

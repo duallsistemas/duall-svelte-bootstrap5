@@ -9,9 +9,10 @@ interface IWindowProps extends IComponentProps {
   height?: string | number;
   backgroundColor?: BackgroundColor;
   loading?: boolean;
-  errorMessage?: string;
-  errorTimeout?: number;
-  errorCenter?: boolean;
+  message?: string;
+  messageColor?: AlertColor;
+  messageTimeout?: number;
+  messageCentered?: boolean;
 }
 
 export default class Window extends SvelteComponentTyped<
