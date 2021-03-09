@@ -12,19 +12,12 @@
   import { createEventDispatcher } from 'svelte';
 
   import type { BackgroundColor } from './common';
+  import { getDimension } from './utils';
   import Alert from './Alert.svelte';
   import Spinner from './Spinner.svelte';
   import BackButton from './BackButton.svelte';
 
   const dispatch = createEventDispatcher();
-
-  function getDimension(value: string | number): string {
-    if (typeof value === 'number') {
-      if (value === 0) return '0';
-      return `${value}px`;
-    }
-    return value;
-  }
 </script>
 
 <div
