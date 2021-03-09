@@ -9,4 +9,13 @@ interface ITableColProps extends IComponentProps {
   verticalAlignment?: VerticalAlignment;
 }
 
-export default class TableCol extends SvelteComponentTyped<ITableColProps, {}, { default: any }> {}
+export default class TableCol extends SvelteComponentTyped<
+  ITableColProps,
+  {
+    click: WindowEventMap['click'];
+    mouseover: WindowEventMap['mouseover'];
+    mouseenter: WindowEventMap['mouseenter'];
+    mouseleave: WindowEventMap['mouseleave'];
+  },
+  { default: any }
+> {}

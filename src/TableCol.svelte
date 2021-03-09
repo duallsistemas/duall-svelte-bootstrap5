@@ -30,6 +30,10 @@
   class:align-text-bottom={verticalAlignment === 'text-bottom'}
   class={$$restProps.class}
   {scope}
+  on:click
+  on:mouseover
+  on:mouseenter
+  on:mouseleave
 >
   <slot />
 </th>

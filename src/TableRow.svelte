@@ -30,6 +30,10 @@
   class:align-text-top={verticalAlignment === 'text-top'}
   class:align-text-bottom={verticalAlignment === 'text-bottom'}
   class={$$restProps.class}
+  on:click
+  on:mouseover
+  on:mouseenter
+  on:mouseleave
 >
   <slot />
 </tr>
