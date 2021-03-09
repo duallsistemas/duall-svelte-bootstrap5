@@ -8,6 +8,7 @@ import Input from './Input';
 import ListGroup from './ListGroup';
 import ListGroupItem from './ListGroupItem';
 import Modal from './Modal';
+import Overflow from './Overflow';
 import Select from './Select';
 import SelectOption from './SelectOption';
 import Spinner from './Spinner';
@@ -35,6 +36,7 @@ export {
   SelectOption,
   Spinner,
   Table,
+  Overflow,
   TableBody,
   TableCol,
   TableData,
