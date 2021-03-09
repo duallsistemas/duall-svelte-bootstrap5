@@ -10,6 +10,7 @@
   export let messageColor: AlertColor | undefined = 'primary';
   export let messageTimeout: number = 5000;
   export let messageCentered: boolean | undefined = undefined;
+  export let messageClosable: boolean | undefined = true;
 
   import { createEventDispatcher } from 'svelte';
 
@@ -55,6 +56,7 @@
       color={messageColor}
       timeout={messageTimeout}
       center={messageCentered}
+      closable={messageClosable}
       small
       class="my-2"
       on:timeout={() => dispatch('messageTimeout')}

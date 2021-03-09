@@ -13,6 +13,7 @@ interface IWindowProps extends IComponentProps {
   messageColor?: AlertColor;
   messageTimeout?: number;
   messageCentered?: boolean;
+  messageClosable?: boolean;
 }
 
 export default class Window extends SvelteComponentTyped<
