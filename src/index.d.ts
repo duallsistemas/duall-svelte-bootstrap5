@@ -7,6 +7,7 @@ import Icon from './Icon';
 import Input from './Input';
 import ListGroup from './ListGroup';
 import ListGroupItem from './ListGroupItem';
+import Loader from './Loader';
 import Modal from './Modal';
 import Overflow from './Overflow';
 import Select from './Select';
@@ -31,6 +32,7 @@ export {
   Input,
   ListGroup,
   ListGroupItem,
+  Loader,
   Modal,
   Select,
   SelectOption,
