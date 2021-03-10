@@ -9,9 +9,10 @@
   export let visible: boolean | undefined = true;
 </script>
 
-<Spinner {ref} {title} {small} {grow} {center} {visible}>
-  <slot />
-</Spinner>
-{#if !visible}
+{#if visible}
+  <div bind:this={ref} {...$$props} class={$$props.class}>
+    <Spinner {title} {small} {grow} {center} visible />
+  </div>
+{:else}
   <slot />
 {/if}

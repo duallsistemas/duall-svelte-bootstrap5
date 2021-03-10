@@ -9,4 +9,8 @@ interface ILoaderProps extends IComponentProps {
   visible?: boolean;
 }
 
-export default class Loader extends SvelteComponentTyped<ILoaderProps, { click: WindowEventMap['click'] }> {}
+export default class Loader extends SvelteComponentTyped<
+  ILoaderProps,
+  { click: WindowEventMap['click'] },
+  { default: any }
+> {}
