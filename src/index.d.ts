@@ -10,6 +10,7 @@ import ListGroupItem from './ListGroupItem';
 import Loader from './Loader';
 import Modal from './Modal';
 import Overflow from './Overflow';
+import Overlay from './Overlay';
 import Select from './Select';
 import SelectOption from './SelectOption';
 import Spinner from './Spinner';
@@ -39,6 +40,7 @@ export {
   Spinner,
   Table,
   Overflow,
+  Overlay,
   TableBody,
   TableCol,
   TableData,

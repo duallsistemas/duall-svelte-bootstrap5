@@ -4,6 +4,10 @@ export declare type VerticalAlignment = 'baseline' | 'top' | 'middle' | 'bottom'
 
 export declare type OverflowType = 'auto' | 'hidden' | 'visible' | 'scroll';
 
+export declare type TextSelection = 'all' | 'auto' | 'none';
+
+export declare type PointerEvents = 'none' | 'auto';
+
 export declare type BackgroundColor =
   | 'primary'
   | 'secondary'
