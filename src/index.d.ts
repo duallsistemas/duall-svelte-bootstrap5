@@ -14,6 +14,7 @@ import Overlay from './Overlay';
 import Select from './Select';
 import SelectOption from './SelectOption';
 import Spinner from './Spinner';
+import Status from './Status';
 import Table from './Table';
 import TableBody from './TableBody';
 import TableCol from './TableCol';
@@ -38,6 +39,7 @@ export {
   Select,
   SelectOption,
   Spinner,
+  Status,
   Table,
   Overflow,
   Overlay,

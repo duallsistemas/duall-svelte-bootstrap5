@@ -1,3 +1,20 @@
+export declare type TextColor =
+  | 'primary'
+  | 'secondary'
+  | 'success'
+  | 'danger'
+  | 'warning'
+  | 'info'
+  | 'light'
+  | 'dark'
+  | 'body'
+  | 'muted'
+  | 'white'
+  | 'black-50'
+  | 'white-50';
+
+export declare type FontSize = 'fs-1' | 'fs-2' | 'fs-3' | 'fs-4' | 'fs-5' | 'fs-6';
+
 export declare type TextAlignment = 'start' | 'center' | 'end';
 
 export declare type VerticalAlignment = 'baseline' | 'top' | 'middle' | 'bottom' | 'text-top' | 'text-bottom';
