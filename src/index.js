@@ -13,6 +13,7 @@ export { default as Overflow } from "./Overflow.svelte";
 export { default as Overlay } from "./Overlay.svelte";
 export { default as Select } from "./Select.svelte";
 export { default as SelectOption } from "./SelectOption.svelte";
+export { default as SpinEdit } from "./SpinEdit.svelte";
 export { default as Spinner } from "./Spinner.svelte";
 export { default as Status } from "./Status.svelte";
 export { default as Table } from "./Table.svelte";

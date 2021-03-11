@@ -13,6 +13,7 @@ import Overflow from './Overflow';
 import Overlay from './Overlay';
 import Select from './Select';
 import SelectOption from './SelectOption';
+import SpinEdit from './SpinEdit';
 import Spinner from './Spinner';
 import Status from './Status';
 import Table from './Table';
@@ -38,6 +39,7 @@ export {
   Modal,
   Select,
   SelectOption,
+  SpinEdit,
   Spinner,
   Status,
   Table,

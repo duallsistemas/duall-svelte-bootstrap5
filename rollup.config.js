@@ -4,6 +4,7 @@ import resolve from '@rollup/plugin-node-resolve';
 import { terser } from 'rollup-plugin-terser';
 import sveltePreprocess from 'svelte-preprocess';
 import typescript from '@rollup/plugin-typescript';
+import css from 'rollup-plugin-css-only';
 import pkg from './package.json';
 
 const production = !process.env.ROLLUP_WATCH;
@@ -30,6 +31,7 @@ export default ["es", "umd"].map((format) => {
           dev: !production
         }
       }),
+      css({ output: pkg.styles }),
       resolve(),
       commonjs(),
       typescript(),
