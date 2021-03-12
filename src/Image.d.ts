@@ -9,6 +9,7 @@ interface IImageProps extends IComponentProps {
   height?: number;
   size?: number;
   center?: boolean;
+  visible?: boolean;
   fallbackSrc?: string;
 }
 
