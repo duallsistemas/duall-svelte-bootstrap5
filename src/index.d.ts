@@ -5,6 +5,7 @@ import Container from './Container';
 import Copyright from './Copyright';
 import Icon from './Icon';
 import Input from './Input';
+import Image from './Image';
 import ListGroup from './ListGroup';
 import ListGroupItem from './ListGroupItem';
 import Loader from './Loader';
@@ -35,6 +36,7 @@ export {
   Copyright,
   Icon,
   Input,
+  Image,
   ListGroup,
   ListGroupItem,
   Loader,
