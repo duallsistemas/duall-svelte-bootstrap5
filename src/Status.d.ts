@@ -1,6 +1,6 @@
 import { SvelteComponentTyped } from 'svelte';
 
-import { IComponentProps, PointerEvents, TextSelection } from './common';
+import { BackgroundColor, FontSize, IComponentProps, TextAlignment, TextColor } from './common';
 
 interface IStatusProps extends IComponentProps {
   color?: TextColor;

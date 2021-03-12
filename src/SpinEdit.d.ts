@@ -1,6 +1,6 @@
 import { SvelteComponentTyped } from 'svelte';
 
-import { IComponentProps } from './common';
+import { ButtonColor, IComponentProps } from './common';
 
 interface ISpinEditProps extends IComponentProps {
   color?: ButtonColor;

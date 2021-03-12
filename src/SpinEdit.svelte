@@ -2,10 +2,10 @@
 <script lang="ts">
   export let ref: any | undefined = undefined;
   export let color: ButtonColor | undefined = 'secondary';
-  export let value: number | undefined = 0;
-  export let max: number | undefined = Number.MAX_SAFE_INTEGER;
-  export let min: number | undefined = Number.MIN_SAFE_INTEGER;
-  export let step: number | undefined = 1;
+  export let value: number = 0;
+  export let max: number = Number.MAX_SAFE_INTEGER;
+  export let min: number = Number.MIN_SAFE_INTEGER;
+  export let step: number = 1;
   export let readOnly: boolean | undefined = false;
   export let removable: boolean | undefined = true;
   export let inputGroup: boolean | undefined = true;
@@ -50,7 +50,7 @@
     on:click={() => dec()}
   >
     {#if removable}
-      <span class="bi bi-{value <= min ? 'dash' : 'trash'} bi-my-auto h5 ms-1" />
+      <span class="bi bi-{value <= min ? 'trash' : 'dash'} bi-my-auto h5 ms-1" />
     {:else}
       <span class="bi bi-dash bi-my-auto h5 ms-1" />
     {/if}
