@@ -9,6 +9,7 @@ export { default as ListGroup } from "./ListGroup.svelte";
 export { default as ListGroupItem } from "./ListGroupItem.svelte";
 export { default as Loader } from "./Loader.svelte";
 export { default as Modal } from "./Modal.svelte";
+export { default as NumberInput } from "./NumberInput.svelte";
 export { default as Overflow } from "./Overflow.svelte";
 export { default as Overlay } from "./Overlay.svelte";
 export { default as Select } from "./Select.svelte";

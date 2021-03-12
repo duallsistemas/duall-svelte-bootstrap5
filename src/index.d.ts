@@ -9,6 +9,7 @@ import ListGroup from './ListGroup';
 import ListGroupItem from './ListGroupItem';
 import Loader from './Loader';
 import Modal from './Modal';
+import NumberInput from './NumberInput';
 import Overflow from './Overflow';
 import Overlay from './Overlay';
 import Select from './Select';
@@ -37,6 +38,7 @@ export {
   ListGroupItem,
   Loader,
   Modal,
+  NumberInput,
   Select,
   SelectOption,
   SpinEdit,
