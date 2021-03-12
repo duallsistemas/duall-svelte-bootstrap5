@@ -9,7 +9,7 @@
 
   const options = {
     mask: Number,
-    scale: { digits },
+    scale: digits,
     signed: false,
     thousandsSeparator: '.',
     padFractionalZeros: true,

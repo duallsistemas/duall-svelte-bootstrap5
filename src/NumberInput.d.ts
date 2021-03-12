@@ -16,8 +16,8 @@ export default class NumberInput extends SvelteComponentTyped<
     keydown: WindowEventMap['keydown'];
     input: WindowEventMap['input'];
     click: WindowEventMap['click'];
-    complete: WindowEventMap['complete'];
     focus: WindowEventMap['focus'];
-    accept: WindowEventMap['accept'];
+    complete: CustomEvent<any>;
+    accept: CustomEvent<any>;
   }
 > {}
