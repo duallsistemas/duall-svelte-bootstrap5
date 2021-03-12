@@ -18,7 +18,7 @@
   const imgStyle = `max-width: ${size}px; max-height: ${size}px;`;
 
   function errorHandler(error) {
-    error.target.src = fallbackSrc;
+    if (!!fallbackSrc) error.target.src = fallbackSrc;
     if (hideOnError) visible = false;
     dispatch('error', error);
   }
