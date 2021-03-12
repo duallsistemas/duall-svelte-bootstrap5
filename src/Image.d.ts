@@ -11,6 +11,7 @@ interface IImageProps extends IComponentProps {
   center?: boolean;
   visible?: boolean;
   fallbackSrc?: string;
+  hideOnError?: boolean;
 }
 
 export default class Image extends SvelteComponentTyped<

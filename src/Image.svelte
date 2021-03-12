@@ -6,8 +6,9 @@
   export let height: number | undefined = undefined;
   export let size: number | undefined = undefined;
   export let center: boolean | undefined = undefined;
-  export let visible: boolean | undefined = undefined;
+  export let visible: boolean | undefined = true;
   export let fallbackSrc: string | undefined = undefined;
+  export let hideOnError: boolean | undefined = undefined;
 
   import { createEventDispatcher } from 'svelte';
 
@@ -18,6 +19,7 @@
 
   function errorHandler(error) {
     error.target.src = fallbackSrc;
+    if (hideOnError) visible = false;
     dispatch('error', error);
   }
 </script>
