@@ -38,14 +38,14 @@
   bind:this={ref}
   {...$$restProps}
   class={$$restProps.class}
-  use:imask={options}
   bind:value={internalValue}
+  use:imask={options}
   on:accept={accept}
   on:accept
+  on:complete
   on:blur
   on:keydown
   on:input
   on:click
-  on:complete
   on:focus
 />

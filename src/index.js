@@ -8,6 +8,7 @@ export { default as Input } from "./Input.svelte";
 export { default as ListGroup } from "./ListGroup.svelte";
 export { default as ListGroupItem } from "./ListGroupItem.svelte";
 export { default as Loader } from "./Loader.svelte";
+export { default as MaskInput } from "./MaskInput.svelte";
 export { default as Modal } from "./Modal.svelte";
 export { default as NumberInput } from "./NumberInput.svelte";
 export { default as Overflow } from "./Overflow.svelte";

@@ -2,15 +2,13 @@ import { SvelteComponentTyped } from 'svelte';
 
 import { IComponentProps } from './common';
 
-interface INumberInputProps extends IComponentProps {
-  value?: number;
-  min?: number;
-  max?: number;
-  digits?: number;
+interface IMaskInputProps extends IComponentProps {
+  value?: any;
+  options?: object;
 }
 
-export default class NumberInput extends SvelteComponentTyped<
-  INumberInputProps,
+export default class MaskInput extends SvelteComponentTyped<
+  IMaskInputProps,
   {
     accept: CustomEvent<any>;
     complete: CustomEvent<any>;

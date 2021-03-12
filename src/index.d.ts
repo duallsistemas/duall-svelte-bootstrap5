@@ -8,6 +8,7 @@ import Input from './Input';
 import ListGroup from './ListGroup';
 import ListGroupItem from './ListGroupItem';
 import Loader from './Loader';
+import MaskInput from './MaskInput';
 import Modal from './Modal';
 import NumberInput from './NumberInput';
 import Overflow from './Overflow';
@@ -37,6 +38,7 @@ export {
   ListGroup,
   ListGroupItem,
   Loader,
+  MaskInput,
   Modal,
   NumberInput,
   Select,
