@@ -1,6 +1,7 @@
 import Alert from './Alert';
 import BackButton from './BackButton';
 import Button from './Button';
+import Col from './Col';
 import Container from './Container';
 import Copyright from './Copyright';
 import Icon from './Icon';
@@ -14,6 +15,7 @@ import Modal from './Modal';
 import NumberInput from './NumberInput';
 import Overflow from './Overflow';
 import Overlay from './Overlay';
+import Row from './Row';
 import Select from './Select';
 import SelectOption from './SelectOption';
 import SpinEdit from './SpinEdit';
@@ -32,6 +34,7 @@ export {
   Alert,
   BackButton,
   Button,
+  Col,
   Container,
   Copyright,
   Icon,
@@ -51,6 +54,7 @@ export {
   Table,
   Overflow,
   Overlay,
+  Row,
   TableBody,
   TableCol,
   TableData,

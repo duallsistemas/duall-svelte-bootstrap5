@@ -1,6 +1,7 @@
 export { default as Alert } from "./Alert.svelte";
 export { default as BackButton } from "./BackButton.svelte";
 export { default as Button } from "./Button.svelte";
+export { default as Col } from "./Col.svelte";
 export { default as Container } from "./Container.svelte";
 export { default as Copyright } from "./Copyright.svelte";
 export { default as Icon } from "./Icon.svelte";
@@ -14,6 +15,7 @@ export { default as Modal } from "./Modal.svelte";
 export { default as NumberInput } from "./NumberInput.svelte";
 export { default as Overflow } from "./Overflow.svelte";
 export { default as Overlay } from "./Overlay.svelte";
+export { default as Row } from "./Row.svelte";
 export { default as Select } from "./Select.svelte";
 export { default as SelectOption } from "./SelectOption.svelte";
 export { default as SpinEdit } from "./SpinEdit.svelte";
