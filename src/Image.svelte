@@ -33,7 +33,7 @@
         {alt}
         {width}
         {height}
-        class="position-absolute top-50 start-50 translate-middle"
+        class="position-absolute mx-auto top-50 start-50 translate-middle"
         style={imgStyle}
         on:error={errorHandler}
       />
