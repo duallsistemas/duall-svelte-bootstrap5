@@ -6,6 +6,7 @@ import Container from './Container';
 import Copyright from './Copyright';
 import Icon from './Icon';
 import Input from './Input';
+import Lead from './Lead';
 import Image from './Image';
 import ListGroup from './ListGroup';
 import ListGroupItem from './ListGroupItem';
@@ -39,6 +40,7 @@ export {
   Copyright,
   Icon,
   Input,
+  Lead,
   Image,
   ListGroup,
   ListGroupItem,
