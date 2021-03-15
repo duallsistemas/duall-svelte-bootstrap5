@@ -10,11 +10,18 @@
   export let removable: boolean | undefined = true;
   export let inputGroup: boolean | undefined = true;
   export let disabled: boolean | undefined = false;
+  export let showEditor: boolean | undefined = true;
+  export let editorTitle: string | undefined = undefined;
 
   import { createEventDispatcher } from 'svelte';
+
   import type { ButtonColor } from './common';
+  import Modal from './Modal.svelte';
 
   const dispatch = createEventDispatcher();
+
+  let showingEditor = false;
+  let editorValue: number;
 
   function dec(): void {
     if (value > min) {
@@ -32,6 +39,21 @@
     }
   }
 
+  function openEditor(value: number): void {
+    editorValue = value;
+    showingEditor = true;
+  }
+
+  function closeEditor(): void {
+    showingEditor = false;
+  }
+
+  function applyEditorValue(newValue: number): void {
+    value = newValue;
+    closeEditor();
+    dispatch('edit', value);
+  }
+
   $: if (value) {
     if (value < min) {
       value = min;
@@ -41,6 +63,25 @@
     dispatch('input', value);
   }
 </script>
+
+<Modal title={editorTitle} visible={showingEditor} size="sm" on:close={() => closeEditor()}>
+  <div slot="body" class="d-inline-flex">
+    <input bind:value={editorValue} type="number" class="hide-spin-button form-control text-center shadow-none" />
+    <button type="button" class="btn btn-primary btn-sm shadow-none ms-1" on:click={() => editorValue++}>+1</button>
+    <button type="button" class="btn btn-primary btn-sm shadow-none ms-1" on:click={() => (editorValue += 10)}>
+      +10
+    </button>
+    <button type="button" class="btn btn-primary btn-sm shadow-none ms-1" on:click={() => (editorValue += 50)}>
+      +50
+    </button>
+  </div>
+  <div slot="footer">
+    <button type="button" class="btn btn-primary btn-sm shadow-none" on:click={() => closeEditor()}>Voltar</button>
+    <button type="button" class="btn btn-primary btn-sm shadow-none" on:click={() => applyEditorValue(editorValue)}>
+      Aplicar
+    </button>
+  </div>
+</Modal>
 
 <div bind:this={ref} {...$$restProps} class:input-group={inputGroup} class="d-print-none {$$restProps.class}">
   <button
@@ -61,11 +102,13 @@
     class="hide-spin-button form-control form-control-sm shadow-none text-center"
     class:input-white-read-only={readOnly && !disabled}
     class:input-text-grey-disabled={disabled}
+    class:pointer={showEditor}
     {disabled}
     {min}
     {max}
     {step}
     {readOnly}
+    on:click={() => openEditor(value)}
     on:mouseover
     on:mouseenter
     on:mouseleave
@@ -99,5 +142,9 @@
 
   .input-text-grey-disabled:disabled {
     color: #6c757d;
+  }
+
+  .pointer {
+    cursor: pointer;
   }
 </style>

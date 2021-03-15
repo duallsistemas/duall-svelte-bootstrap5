@@ -12,6 +12,8 @@ interface ISpinEditProps extends IComponentProps {
   removable?: boolean;
   inputGroup?: boolean;
   disabled?: boolean;
+  showEditor?: boolean;
+  editorTitle?: string;
 }
 
 export default class SpinEdit extends SvelteComponentTyped<
@@ -24,5 +26,6 @@ export default class SpinEdit extends SvelteComponentTyped<
     dec: CustomEvent<number | undefined>;
     remove: CustomEvent<number | undefined>;
     input: CustomEvent<number | undefined>;
+    edit: CustomEvent<number | undefined>;
   }
 > {}
