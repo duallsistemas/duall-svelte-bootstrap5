@@ -26,14 +26,14 @@
 
 {#if visible}
   {#if center}
-    <div bind:this={ref} class="position-relative {$$restProps.class}" style={divStyle}>
+    <div bind:this={ref} class="position-relative mx-auto {$$restProps.class}" style={divStyle}>
       <img
         {...$$restProps}
         {src}
         {alt}
         {width}
         {height}
-        class="position-absolute mx-auto top-50 start-50 translate-middle"
+        class="position-absolute top-50 start-50 translate-middle"
         style={imgStyle}
         on:error={errorHandler}
       />
