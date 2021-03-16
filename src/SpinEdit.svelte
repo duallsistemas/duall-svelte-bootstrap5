@@ -109,6 +109,7 @@
     type="button"
     class="btn btn-sm btn-{color} shadow-none rounded-end rounded-pill px-1"
     disabled={disabled || (!removable && (!value || value <= min))}
+    style="width: 50px;"
     on:click={() => dec()}
   >
     {#if removable}
@@ -138,6 +139,7 @@
     type="button"
     class="btn btn-sm btn-{color} shadow-none rounded-start rounded-pill px-1"
     disabled={disabled || value >= max}
+    style="width: 50px;"
     on:click={() => inc()}
   >
     <span class="bi bi-plus bi-my-auto h5 me-1" />
