@@ -44,6 +44,10 @@
     showingEditor = true;
   }
 
+  function resetEditor(): void {
+    editorValue = 0;
+  }
+
   function closeEditor(): void {
     showingEditor = false;
   }
@@ -67,18 +71,35 @@
 <Modal title={editorTitle} visible={showingEditor} size="sm" on:close={() => closeEditor()}>
   <div slot="body" class="d-inline-flex">
     <input bind:value={editorValue} type="number" class="hide-spin-button form-control text-center shadow-none" />
-    <button type="button" class="btn btn-primary btn-sm shadow-none ms-1" on:click={() => editorValue++}>+1</button>
-    <button type="button" class="btn btn-primary btn-sm shadow-none ms-1" on:click={() => (editorValue += 10)}>
+    <button type="button" class="btn btn-secondary btn-sm shadow-none ms-1" on:click={() => (editorValue += 1)}>
+      +1
+    </button>
+    <button type="button" class="btn btn-secondary btn-sm shadow-none ms-1" on:click={() => (editorValue += 10)}>
       +10
     </button>
-    <button type="button" class="btn btn-primary btn-sm shadow-none ms-1" on:click={() => (editorValue += 50)}>
+    <button type="button" class="btn btn-secondary btn-sm shadow-none ms-1" on:click={() => (editorValue += 50)}>
       +50
     </button>
   </div>
-  <div slot="footer">
-    <button type="button" class="btn btn-primary btn-sm shadow-none" on:click={() => closeEditor()}>Voltar</button>
-    <button type="button" class="btn btn-primary btn-sm shadow-none" on:click={() => applyEditorValue(editorValue)}>
-      Aplicar
+  <div slot="footer" class="d-flex w-100 my-0">
+    <button
+      type="button"
+      class="btn btn-secondary shadow-none me-auto"
+      style="width: 60px;"
+      on:click={() => closeEditor()}
+    >
+      <i class="bi bi-arrow-left bi-my-auto" />
+    </button>
+    <button type="button" class="btn btn-danger shadow-none me-1" style="width: 60px;" on:click={() => resetEditor()}>
+      <i class="bi bi-x-circle bi-my-auto" />
+    </button>
+    <button
+      type="button"
+      class="btn btn-secondary shadow-none"
+      style="width: 70px;"
+      on:click={() => applyEditorValue(editorValue)}
+    >
+      <i class="bi bi-check-circle bi-my-auto" />
     </button>
   </div>
 </Modal>
